@@ -4,6 +4,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mara-li/uniformize"
+  },
   "description": "A simple library to uniformize strings by extending the String prototype",
   "scripts": {
     "build": "tsup",
