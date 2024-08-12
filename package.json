@@ -13,18 +13,20 @@
   "scripts": {
     "build": "tsup",
     "prebuild": "tsc --noEmit --skipLibCheck",
-    "prepublish": "bun run build"
+    "prepublish": "bun run build",
+    "release": "commit-and-tag-version",
+    "postrelease": "npm publish"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@biomejs/biome": "^1.8.3",
+    "commit-and-tag-version": "^12.4.1",
+    "tsup": "^8.2.4"
   },
   "peerDependencies": {
     "typescript": "^5.5.4"
   },
-  "dependencies": {
-    "@biomejs/biome": "^1.8.3",
-    "tsup": "^8.2.4"
-  },
+  "dependencies": {},
   "trustedDependencies": [
     "@biomejs/biome"
   ],
