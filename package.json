@@ -1,0 +1,29 @@
+{
+  "name": "uniformize",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "description": "A simple library to uniformize strings by extending the String prototype",
+  "scripts": {
+    "build": "tsup",
+    "prebuild": "tsc --noEmit --skipLibCheck",
+    "prepublish": "bun run build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "tsup": "^8.2.4"
+  },
+  "trustedDependencies": [
+    "@biomejs/biome"
+  ],
+  "files": [
+    "dist"
+  ]
+}
