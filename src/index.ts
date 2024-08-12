@@ -6,9 +6,9 @@ Object.defineProperty(String.prototype, "removeAccents", {
 });
 
 Object.defineProperty(String.prototype, "standardize", {
-	value: function (trim?: boolean) {
-		if (trim) return this.removeAccents().toLowerCase().trim();
-		return this.removeAccents().toLowerCase();
+	value: function (noTrim?: boolean) {
+		if (!noTrim) return this.removeAccents().toLowerCase();
+		return this.removeAccents().toLowerCase().trim();
 	},
 	enumerable: false,
 });
@@ -29,8 +29,8 @@ Object.defineProperty(String.prototype, "capitalize", {
 
 Object.defineProperty(String.prototype, "subText", {
 	value: function (query?: string | null, strict?: boolean) {
-		if (strict) return this.standardize(true) === query?.standardize(true);
-		return this.standardize(true).includes(query?.standardize(true));
+		if (strict) return this.standardize() === query?.standardize();
+		return this.standardize().includes(query?.standardize());
 	},
 	enumerable: false,
 });
@@ -40,7 +40,7 @@ Object.defineProperty(String.prototype, "unidecode", {
 		const emojiRegex = /[\p{Emoji}]/gu;
 		const decoded = this.replace(emojiRegex, "").trim();
 		if (keepAccent) return decoded;
-		return decoded.standardize(true);
+		return decoded.standardize();
 	},
 	enumerable: false,
 });

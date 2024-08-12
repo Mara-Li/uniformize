@@ -6,16 +6,18 @@ interface String {
 	removeAccents(): string;
 	/**
 	 * Remove accents from a string, standardize, trim and lowercased.
-	 * @param trim {boolean} If true, the string will be trimmed.
+	 * @param noTrim {boolean} If false, the string won't be trimmed.
 	 */
-	standardize(trim?: boolean): string;
+	standardize(noTrim?: boolean): string;
 	/**
 	 * Capitalize the first letter of a string.
+	 * @example "hello world".toTitle() // "Hello world"
 	 */
 	toTitle(): string;
 	/**
 	 * Search for a substring in a string, standardized, trimmed and lowercased.
-	 * @param search {string} The substring to search for.
+	 * @param {string|null} search  The substring to search for.
+	 * @param {boolean} strict  If true, the search will be strict (strict equality).
 	 * @returns {boolean}
 	 */
 	subText(query?: string | null, strict?: boolean): boolean;
@@ -25,6 +27,7 @@ interface String {
 	capitalize(): string;
 	/**
 	 * Remove emoji from a string.
+	 * @param {boolean} keepAccent  If true, the accents will be kept.
 	 */
 	unidecode(keepAccent?: boolean): string;
 	/**

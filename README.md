@@ -36,15 +36,15 @@ const result = str.removeAccents();
 console.log(result); // "Cafe"
 ```
 
-### `standardize(trim?: boolean): string`
+### `standardize(noTrim?: boolean): string`
 Removes accents from a string, standardizes it (lowercase), and optionally trims it.
 
-- **trim** (optional): If `true`, the string will be trimmed.
+- **noTrim** (optional): If `true`, the string won't be trimmed.
 
 **Example:**
 ```javascript
 const str = "  Café au lait  ";
-const result = str.standardize(true);
+const result = str.standardize();
 console.log(result); // "cafe au lait"
 ```
 
