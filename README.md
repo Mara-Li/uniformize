@@ -15,11 +15,18 @@ pnpm add uniformize
 
 ## Usage
 
-As already said, it extends the `String` prototype, so you can use it like this:
+As already said, it extends the `String` prototype, by using the global module. So, in your `tsconfig.json` :
+```json
+{
+  "compilerOptions": {
+	"typeRoots": ["node_modules/@types", "node_modules/uniformize"]
+  }
+}
+```
+
+Then, you can use it like this :
 
 ```ts
-import 'uniformize';
-
 const str = "Je suis écrit en français, avec plein d'accents relou !";
 const uniformized = str.standardize();
 // uniformized === 'je suis ecrit en francais, avec plein d'accents relou !'
