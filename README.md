@@ -27,6 +27,7 @@ As already said, it extends the `String` prototype, by using the global module. 
 Then, you can use it like this :
 
 ```ts
+import "uniformize"; //need to be imported at last one time in your project, for example, in your `index.ts` file
 const str = "Je suis écrit en français, avec plein d'accents relou !";
 const uniformized = str.standardize();
 // uniformized === 'je suis ecrit en francais, avec plein d'accents relou !'
