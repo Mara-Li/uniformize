@@ -15,10 +15,12 @@
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
     "removeComments": false,
-    "typeRoots": ["node_modules/@types", "src/@types"],
     "sourceMap": false,
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*"]
+    }
   },
-  "include": ["./**/*.ts"],
+  "include": ["./**/*.ts", "src/global.d.ts"],
   "exclude": ["node_modules", "dist"]
 }

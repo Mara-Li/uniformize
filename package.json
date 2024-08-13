@@ -2,7 +2,7 @@
   "name": "uniformize",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/global.d.ts",
   "type": "commonjs",
   "version": "1.0.1",
   "repository": {
@@ -13,14 +13,22 @@
   "scripts": {
     "build": "tsup",
     "prebuild": "tsc --noEmit --skipLibCheck",
+    "postbuild": "cross-os cp",
     "prepublish": "bun run build",
     "release": "commit-and-tag-version",
     "postrelease": "npm publish"
+  },
+  "cross-os": {
+    "cp": {
+      "win32": "xcopy /i /Y .\\src\\global.d.ts .\\dist",
+      "darwin": "cp ./src/global.d.ts ./dist"
+    }
   },
   "devDependencies": {
     "@types/bun": "latest",
     "@biomejs/biome": "^1.8.3",
     "commit-and-tag-version": "^12.4.1",
+    "cross-os": "^1.5.0",
     "tsup": "^8.2.4"
   },
   "peerDependencies": {
@@ -28,7 +36,8 @@
   },
   "dependencies": {},
   "trustedDependencies": [
-    "@biomejs/biome"
+    "@biomejs/biome",
+    "esbuild"
   ],
   "files": [
     "dist"
