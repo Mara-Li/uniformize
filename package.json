@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "types": "dist/global.d.ts",
   "type": "commonjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mara-li/uniformize"
@@ -14,7 +14,7 @@
     "build": "tsup",
     "prebuild": "tsc --noEmit --skipLibCheck",
     "postbuild": "cross-os cp",
-    "prepublish": "bun run build",
+    "prerelease": "bun run build",
     "release": "commit-and-tag-version",
     "postrelease": "npm publish"
   },
