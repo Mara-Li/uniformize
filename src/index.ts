@@ -15,14 +15,14 @@ Object.defineProperty(String.prototype, "standardize", {
 
 Object.defineProperty(String.prototype, "toTitle", {
 	value: function () {
-		return this.charAt(0).toUpperCase() + this.slice(1);
+		return this.toLowerCase().charAt(0).toUpperCase() + this.slice(1);
 	},
 	enumerable: false,
 });
 
 Object.defineProperty(String.prototype, "capitalize", {
 	value: function () {
-		return this.replace(/(^\p{L})|(\s\p{L})/giu, (char: string) => char.toUpperCase());
+		return this.toLowerCase().replace(/(^\p{L})|(\s\p{L})/giu, (char: string) => char.toUpperCase());
 	},
 	enumerable: false,
 });
