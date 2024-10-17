@@ -18,7 +18,7 @@ String.prototype.capitalize = function (toLowerCase?: boolean) {
 	};
 
 String.prototype.subText = function (query?: string | null, strict?: boolean) {
-	if (!query) return false;
+	if (query ==null) return false;
 	if (strict) return this.standardize() === query.standardize();
 	return this.standardize().includes(query.standardize());
 };
