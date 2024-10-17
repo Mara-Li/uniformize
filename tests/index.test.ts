@@ -14,4 +14,7 @@ describe("Subtext", () =>{
 	test("with number", () =>{
 		expect("-# ↪ https://discord.com/channels/1295390060828616961/1295390188229652837/1295390616847472181".subText("-# ↪ https://discord.com/channels/1295390060828616961")).toBe(true);
 	});
+	test("empty query", () =>{
+		expect("Hello World".subText(null)).toBe(false);
+	});
 })
