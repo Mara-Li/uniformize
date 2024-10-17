@@ -21,7 +21,7 @@ interface String {
 		 * @param {boolean} strict  If true, the search will be strict (strict equality).
 		 * @returns {boolean}
 		 */
-		subText(query?: string, strict?: boolean): boolean;
+		subText(query?: string | null, strict?: boolean): boolean;
 		/**
 		 * Capitalize the first letter of each word in a string.
 		 * toLowerCase {boolean} If true, the string will be lowercased first.
