@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.2](https://github.com/mara-li/uniformize/compare/v2.0.0...v2.0.2) (2024-10-17)
+
+
+### Bug Fixes
+
+* subtext with argument type ([f75ca23](https://github.com/mara-li/uniformize/commit/f75ca23b5fdf54cf09a96d976db4c71c7d2c3b9e))
+* subtext with argument type ([7d2a6ba](https://github.com/mara-li/uniformize/commit/7d2a6ba7e3ab9a97b6d47c44b526a24cda475d12))
+* **subtext:** in case of null/undefined query, it must returns "false" (respect old behavior) ([0338585](https://github.com/mara-li/uniformize/commit/03385850f8bff1f01ff01c8305efd9bba88fd9a7))
+
 ## [2.0.1](https://github.com/mara-li/uniformize/compare/v2.0.0...v2.0.1) (2024-10-17)
 
 
