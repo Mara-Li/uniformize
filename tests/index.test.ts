@@ -1,5 +1,5 @@
 import {describe, expect, test} from "bun:test";
-import "src/index.ts";
+import "src";
 
 describe("standardize", () => {
 	test('simple', () => {

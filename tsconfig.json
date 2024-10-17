@@ -16,8 +16,9 @@
     "forceConsistentCasingInFileNames": true,
     "removeComments": false,
     "sourceMap": false,
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "types": ["src/index.d.ts"]
   },
-  "include": ["./**/*.ts", "src/global.d.ts"],
+  "include": ["./**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

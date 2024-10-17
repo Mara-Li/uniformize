@@ -15,13 +15,10 @@ pnpm add uniformize
 
 ## Usage
 
-As already said, it extends the `String` prototype, by using the global module. So, in your `tsconfig.json` :
-```json
-{
-  "compilerOptions": {
-	"typeRoots": ["node_modules/@types", "node_modules/uniformize"]
-  }
-}
+At the root (your `index.ts` file for example), import the package once to extend the `String` prototype:
+
+```ts
+import "uniformize";
 ```
 
 Then, you can use it like this :

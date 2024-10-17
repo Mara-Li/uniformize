@@ -1,5 +1,4 @@
-declare global {
-	interface String {
+interface String {
 		/**
 		 * Remove accents from a string.
 		 * @returns {string}
@@ -18,11 +17,11 @@ declare global {
 		toTitle(toLowerCase?: boolean): string;
 		/**
 		 * Search for a substring in a string, standardized, trimmed and lowercased.
-		 * @param {string|null} search  The substring to search for.
+		 * @param {string} query  The substring to search for.
 		 * @param {boolean} strict  If true, the search will be strict (strict equality).
 		 * @returns {boolean}
 		 */
-		subText(query?: string | null, strict?: boolean): boolean;
+		subText(query: string, strict?: boolean): boolean;
 		/**
 		 * Capitalize the first letter of each word in a string.
 		 * toLowerCase {boolean} If true, the string will be lowercased first.
@@ -37,8 +36,4 @@ declare global {
 		 * Remove backtick from a string.
 		 */
 		removeBacktick(): string;
-	}
 }
-
-//biome-ignore lint/style/useExportType: This is a declaration file, no need to export as type.
-export { };

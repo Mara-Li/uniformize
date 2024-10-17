@@ -2,7 +2,7 @@
   "name": "uniformize",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
-  "types": "dist/global.d.ts",
+  "types": "dist/types.d.ts",
   "type": "commonjs",
   "version": "1.0.8",
   "repository": {
@@ -20,8 +20,8 @@
   },
   "cross-os": {
     "cp": {
-      "win32": "xcopy /i /Y .\\src\\global.d.ts .\\dist",
-      "darwin": "cp ./src/global.d.ts ./dist"
+      "win32": "xcopy /i /Y .\\src\\types.d.ts .\\dist",
+      "darwin": "cp ./src/types.d.ts ./dist"
     }
   },
   "devDependencies": {
