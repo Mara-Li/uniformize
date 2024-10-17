@@ -19,8 +19,8 @@ String.prototype.capitalize = function (toLowerCase?: boolean) {
 
 String.prototype.subText = function (query?: string | null, strict?: boolean) {
 	if (!query) return false;
-	if (strict) return this.standardize() === query?.standardize();
-	return this.standardize().includes(query?.standardize());
+	if (strict) return this.standardize() === query.standardize();
+	return this.standardize().includes(query.standardize());
 };
 
 String.prototype.unidecode = function (keepAccent?: boolean) {
