@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.3](https://github.com/mara-li/uniformize/compare/v2.0.2...v2.0.3) (2024-10-17)
+
+
+### Bug Fixes
+
+* **subtext:** restore old behavior ([2919e5b](https://github.com/mara-li/uniformize/commit/2919e5bf9fe9abf8c3418b274273071ac4fb0eb8))
+
 ## [2.0.2](https://github.com/mara-li/uniformize/compare/v2.0.0...v2.0.2) (2024-10-17)
 
 
