@@ -12,9 +12,10 @@ declare global {
 		standardize(noTrim?: boolean): string;
 		/**
 		 * Capitalize the first letter of a string.
+		 * @param toLowerCase {boolean} If true, the string will be lowercased first.
 		 * @example "hello world".toTitle() // "Hello world"
 		 */
-		toTitle(): string;
+		toTitle(toLowerCase?: boolean): string;
 		/**
 		 * Search for a substring in a string, standardized, trimmed and lowercased.
 		 * @param {string|null} search  The substring to search for.
@@ -24,8 +25,9 @@ declare global {
 		subText(query?: string | null, strict?: boolean): boolean;
 		/**
 		 * Capitalize the first letter of each word in a string.
+		 * toLowerCase {boolean} If true, the string will be lowercased first.
 		 */
-		capitalize(): string;
+		capitalize(toLowerCase?: boolean): string;
 		/**
 		 * Remove emoji from a string.
 		 * @param {boolean} keepAccent  If true, the accents will be kept.
@@ -39,4 +41,4 @@ declare global {
 }
 
 //biome-ignore lint/style/useExportType: This is a declaration file, no need to export as type.
-export {};
+export { };

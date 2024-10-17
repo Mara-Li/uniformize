@@ -1,8 +1,17 @@
-import { expect, test } from "bun:test";
+import {describe, expect, test} from "bun:test";
 import "src/index.ts";
 
-test('standardize', () => {
-	console.log("Je suis écrit en français, avec plein d'accents relou !".standardize());
-	expect("Héllô Wôrld".standardize()).toBe("hello world");
+describe("standardize", () => {
+	test('simple', () => {
+		expect("Héllô Wôrld".standardize()).toBe("hello world");
+	});
 });
 
+describe("Subtext", () =>{
+	test("simple subtext", () =>{
+		expect("Hello World".subText("Hello")).toBe(true);
+	});
+	test("with number", () =>{
+		expect("-# ↪ https://discord.com/channels/1295390060828616961/1295390188229652837/1295390616847472181".subText("-# ↪ https://discord.com/channels/1295390060828616961")).toBe(true);
+	});
+})
