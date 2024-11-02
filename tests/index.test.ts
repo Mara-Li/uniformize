@@ -5,6 +5,18 @@ describe("standardize", () => {
 	test('Héllô Wôrld → hello world', () => {
 		expect("Héllô Wôrld".standardize()).toBe("hello world");
 	});
+	test("should keep number", () => {
+		expect("1hello world".standardize()).toBe("1hello world");
+	})
+});
+
+describe("unidecode", () => {
+	test("should keep number", () => {
+		expect("1hello world".unidecode()).toBe("1hello world");
+	});
+	test("should remove emoji", () => {
+		expect("hello 😄    world".unidecode()).toBe("hello world");
+	});
 });
 
 describe("capitalize", () => {
