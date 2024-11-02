@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.5](https://github.com/mara-li/uniformize/compare/v2.0.4...v2.0.5) (2024-11-02)
+
+
+### Bug Fixes
+
+* **unidecode:** should only remove emoji and not number too ([929563b](https://github.com/mara-li/uniformize/commit/929563bba6c9b0ad1804d3ceeb1cdfd7a8f8dc16))
+
 ## [2.0.4](https://github.com/mara-li/uniformize/compare/v2.0.3...v2.0.4) (2024-11-02)
 
 
