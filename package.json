@@ -16,7 +16,7 @@
     "postbuild": "cross-os cp",
     "prerelease": "bun run build",
     "release": "commit-and-tag-version",
-    "postrelease": "npm publish"
+    "postrelease": "npm publish && git push --follow-tags origin master"
   },
   "cross-os": {
     "cp": {
