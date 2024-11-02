@@ -14,6 +14,9 @@ describe("capitalize", () => {
 	test("hello world → Hello World", () => {
 		expect("hello world".capitalize()).toBe("Hello World");
 	});
+	test("1hello world → 1hello World", () => {
+		expect("1hello world".capitalize()).toBe("1hello World");
+	});
 });
 
 describe('toTitle', () => {
