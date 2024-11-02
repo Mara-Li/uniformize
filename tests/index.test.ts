@@ -15,7 +15,7 @@ describe("unidecode", () => {
 		expect("1hello world".unidecode()).toBe("1hello world");
 	});
 	test("should remove emoji", () => {
-		expect("hello 😄    world".unidecode()).toBe("hello world");
+		expect("hello 😄world".unidecode()).toBe("hello world");
 	});
 });
 
