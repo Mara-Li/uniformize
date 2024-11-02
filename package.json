@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
   "type": "commonjs",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mara-li/uniformize"

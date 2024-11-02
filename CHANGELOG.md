@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.4](https://github.com/mara-li/uniformize/compare/v2.0.3...v2.0.4) (2024-11-02)
+
+
+### Bug Fixes
+
+* **capitalize:** support accent in regex ([85424dd](https://github.com/mara-li/uniformize/commit/85424dd480e6c41bbeac8d08fcbb89f0bba0c94b))
+
 ## [2.0.3](https://github.com/mara-li/uniformize/compare/v2.0.2...v2.0.3) (2024-10-17)
 
 
