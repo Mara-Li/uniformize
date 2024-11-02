@@ -14,7 +14,7 @@ String.prototype.toTitle = function (toLowerCase?: boolean) {
 
 String.prototype.capitalize = function (toLowerCase?: boolean) {
 		const text = toLowerCase ? this.toLowerCase() : this;
-		return text.replace(/(^\w{1})|(\s+\w{1})/g, (char: string) => char.toUpperCase());
+		return text.replace(/(^\p{L}{1})|(\s+\p{L}{1})/gu, (char: string) => char.toUpperCase());
 	};
 
 String.prototype.subText = function (query?: string | null, strict?: boolean) {
