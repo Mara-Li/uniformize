@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.1.0](https://github.com/mara-li/uniformize/compare/v2.0.5...v2.1.0) (2024-11-03)
+
+
+### Features
+
+* **capitalize:** support uppercase after "-" ([a3fa1b9](https://github.com/mara-li/uniformize/commit/a3fa1b929700164192a9820406bed6988bf5632e))
+
 ## [2.0.5](https://github.com/mara-li/uniformize/compare/v2.0.4...v2.0.5) (2024-11-02)
 
 
