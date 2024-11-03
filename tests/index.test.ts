@@ -29,6 +29,15 @@ describe("capitalize", () => {
 	test("1hello world → 1hello World", () => {
 		expect("1hello world".capitalize()).toBe("1hello World");
 	});
+	test("Prénom-nom → Prénom-Nom", () => {
+		expect("Prénom-nom".capitalize()).toBe("Prénom-Nom");
+	});
+	test("1 hello world → 1 Hello World", () => {
+		expect("1 hello world".capitalize()).toBe("1 Hello World");
+	});
+	test("éden bonne-étoile → Éden Bonne-Étoile", () => {
+		expect("éden bonne-étoile".capitalize()).toBe("Éden Bonne-Étoile");
+	});
 });
 
 describe('toTitle', () => {
