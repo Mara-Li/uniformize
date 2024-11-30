@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.2.0](https://github.com/mara-li/uniformize/compare/v2.1.0...v2.2.0) (2024-11-30)
+
+
+### Features
+
+* add trimAll ⇒ remove any whitespace characters in a string ([d7d471a](https://github.com/mara-li/uniformize/commit/d7d471a80935e5fb1663b48cb2d5b56509117938))
+
 ## [2.1.0](https://github.com/mara-li/uniformize/compare/v2.0.5...v2.1.0) (2024-11-03)
 
 
