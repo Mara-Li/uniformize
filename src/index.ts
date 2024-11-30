@@ -2,6 +2,10 @@ String.prototype.removeAccents = function () {
 	return this.normalize("NFD").replace(/\p{Diacritic}/gu, "");
 };
 
+String.prototype.trimAll = function () {
+	return this.replaceAll(/\s+/g, "").trim();
+}
+
 String.prototype.standardize = function (noTrim?: boolean) {
 	if (!noTrim) return this.removeAccents().toLowerCase();
 	return this.removeAccents().toLowerCase().trim();

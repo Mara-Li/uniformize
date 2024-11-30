@@ -69,3 +69,18 @@ describe("Subtext", () =>{
 		expect("hello".subText("")).toBe(true);
 	});
 })
+
+describe("trim all", () =>{
+	test("hello world", () =>{
+		expect("hello world".trimAll()).toBe("helloworld");
+	});
+	test("hello world ", () =>{
+		expect("hello world ".trimAll()).toBe("helloworld");
+	});
+	test(" hello world", () =>{
+		expect(" hello world".trimAll()).toBe("helloworld");
+	});
+	test(" hello world ", () =>{
+		expect(" hello world ".trimAll()).toBe("helloworld");
+	});
+})

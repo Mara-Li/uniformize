@@ -36,4 +36,8 @@ interface String {
 		 * Remove backtick from a string.
 		 */
 		removeBacktick(): string;
+		/**
+		 * Remove all spaces from a string.
+		 */
+		trimAll(): string;
 }
