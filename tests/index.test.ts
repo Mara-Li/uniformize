@@ -84,3 +84,29 @@ describe("trim all", () =>{
 		expect(" hello world ".trimAll()).toBe("helloworld");
 	});
 })
+
+describe("decode", () => {
+  test("should remove non-alphanumeric characters", () => {
+    expect("Hello, World!".decode()).toBe("hello world");
+  });
+
+  test("should keep emojis, spaces, underscores, and hyphens", () => {
+    expect("Hello 🤖_World-".decode()).toBe("hello 🤖_world-");
+  });
+
+  test("should remove accents if keepAccent is false", () => {
+    expect("Café".decode(false, false)).toBe("cafe");
+  });
+
+  test("should keep accents if keepAccent is true", () => {
+    expect("Café".decode(false, true)).toBe("Café");
+  });
+
+  test("should not trim if noTrim is true", () => {
+    expect("  Hello World  ".decode(true)).toBe("  hello world  ");
+  });
+
+  test("should trim if noTrim is false", () => {
+    expect("  Hello World  ".decode()).toBe("hello world");
+  });
+});

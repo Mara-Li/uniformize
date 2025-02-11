@@ -107,3 +107,15 @@ const str = "`Hello` World";
 const result = str.removeBacktick();
 console.log(result); // "Hello World"
 ```
+
+### `decode(noTrim?: boolean, keepAccents?:boolean): string`
+Remove all non-alphanumeric characters from a string, and keep emojis, spaces, underscores and hyphens.
+- `noTrim` (optional): If `true`, the string won't be trimmed.
+- `keepAccents` (optional): If `true`, accents will be kept; otherwise, they will be removed along with emojis.
+
+**Example:**
+```javascript
+const str = "┇🤖・bots are cool";
+const result = str.decode();
+console.log(result); // "🤖bots are cool"
+```

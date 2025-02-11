@@ -40,4 +40,8 @@ interface String {
 		 * Remove all spaces from a string.
 		 */
 		trimAll(): string;
+		/**
+		 * Remove all non-alphanumeric characters from a string, and keep emojis, spaces, underscores and hyphens.
+		 */
+		decode(keepAccent?:boolean, noTrim?:boolean): string;
 }
