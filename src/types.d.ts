@@ -43,5 +43,5 @@ interface String {
 		/**
 		 * Remove all non-alphanumeric characters from a string, and keep emojis, spaces, underscores and hyphens.
 		 */
-		decode(keepAccent?:boolean, noTrim?:boolean): string;
+		decode(keepAccent?:boolean, standardize?:boolean): string;
 }

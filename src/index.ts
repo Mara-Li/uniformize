@@ -38,9 +38,9 @@ String.prototype.removeBacktick = function () {
 	return this.replace(/`/g, "");
 };
 
-String.prototype.decode = function (noTrim?: boolean, keepAccent?: boolean) {
+String.prototype.decode = function (noTrim?: boolean, standardize?: boolean) {
 	let t= this.replace(/[^\p{L}\p{N}\p{Zs}\p{Emoji}_-]/gu, "");
 	if (!noTrim) t = t.trim();
-	if (keepAccent) return t;
+	if (!standardize) return t;
 	return t.standardize();
 }
