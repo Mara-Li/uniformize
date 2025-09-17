@@ -25,14 +25,14 @@
     }
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@types/bun": "latest",
-    "commit-and-tag-version": "^12.4.1",
+    "@biomejs/biome": "^2.2.4",
+    "@types/bun": "^1.2.22",
+    "commit-and-tag-version": "^12.6.0",
     "cross-os": "^1.5.0",
-    "tsup": "^8.2.4"
+    "tsup": "^8.5.0"
   },
   "peerDependencies": {
-    "typescript": "^5.5.4"
+    "typescript": "^5.9.2"
   },
   "dependencies": {},
   "trustedDependencies": [
