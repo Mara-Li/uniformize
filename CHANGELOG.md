@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.5.0](https://github.com/mara-li/uniformize/compare/v2.4.0...v2.5.0) (2025-09-17)
+
+
+### Features
+
+* **unidecode:** enhance emoji handling in unidecode function and add tests ([095a152](https://github.com/mara-li/uniformize/commit/095a1524e4da6630b7c236015be80c8aa93d8f4e))
+
 ## [2.4.0](https://github.com/mara-li/uniformize/compare/v2.3.0...v2.4.0) (2025-02-11)
 
 
