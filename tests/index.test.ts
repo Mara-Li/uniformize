@@ -16,7 +16,10 @@ describe("unidecode", () => {
 	});
 	test("should remove emoji", () => {
 		expect("hello 😄world".unidecode()).toBe("hello world");
+		expect("hello🤖world".unidecode()).toBe("helloworld");
+		expect("💻🦇■∎◉◻⌋▰⌈×↪".unidecode()).toBe("■∎◉◻⌋▰⌈×↪");
 	});
+	
 });
 
 describe("capitalize", () => {
