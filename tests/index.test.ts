@@ -113,3 +113,12 @@ describe("decode", () => {
     expect("  Hello World  ".decode()).toBe("Hello World");
   });
 });
+
+describe('escapeRegex', () => {
+	test("should escape characters", () => {
+		expect("Hello.world*".escapeRegex()).toBe("Hello\\.world\\*");
+	})
+	test("Should be keep as it", ()=>{
+		expect("HelloWorld".escapeRegex()).toBe("HelloWorld");
+	})
+});
