@@ -6,25 +6,25 @@ interface String {
 	removeAccents(): string;
 	/**
 	 * Remove accents from a string, standardize, trim and lowercased.
-	 * @param noTrim {boolean} If false, the string won't be trimmed.
+	 * @param noTrim {boolean} Don't trim the string
 	 */
 	standardize(noTrim?: boolean): string;
 	/**
 	 * Capitalize the first letter of a string.
-	 * @param toLowerCase {boolean} If true, the string will be lowercased first.
+	 * @param toLowerCase {boolean} Lowercase first the str
 	 * @example "hello world".toTitle() // "Hello world"
 	 */
 	toTitle(toLowerCase?: boolean): string;
 	/**
 	 * Search for a substring in a string, standardized, trimmed and lowercased.
 	 * @param {string} query  The substring to search for.
-	 * @param {boolean} strict  If true, the search will be strict (strict equality).
+	 * @param {boolean} strict  Strict search (strict equality).
 	 * @returns {boolean}
 	 */
 	subText(query?: string | null, strict?: boolean): boolean;
 	/**
 	 * Capitalize the first letter of each word in a string.
-	 * toLowerCase {boolean} If true, the string will be lowercased first.
+	 * @param toLowerCase {boolean} Lowercase the str first
 	 */
 	capitalize(toLowerCase?: boolean): string;
 	/**
@@ -42,6 +42,8 @@ interface String {
 	trimAll(): string;
 	/**
 	 * Remove all non-alphanumeric characters from a string, and keep emojis, spaces, underscores and hyphens.
+	 * @param {boolean} keepAccent	Keep accents
+	 * @param {boolean} standardize	Standardize the string (accents removed, lowercased and trimmed).
 	 */
 	decode(keepAccent?: boolean, standardize?: boolean): string;
 
