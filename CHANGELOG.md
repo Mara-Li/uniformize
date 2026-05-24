@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.6.0](https://github.com/mara-li/uniformize/compare/v2.5.0...v2.6.0) (2026-05-24)
+
+
+### Features
+
+* add escapeRegex ([748728a](https://github.com/mara-li/uniformize/commit/748728a2d37dda1a490aef33e9ab02d539ca2943))
+
 ## [2.5.0](https://github.com/mara-li/uniformize/compare/v2.4.0...v2.5.0) (2025-09-17)
 
 
